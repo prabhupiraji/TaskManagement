@@ -1,0 +1,24 @@
+<h3>View Task Details</h3>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>
+                TaskId
+            </th>
+            <th>
+                TaskTitle
+            </th>
+            <th>
+                TaskDescription
+            </th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of data">
+        <tr>
+            <td>{{item.taskid}}</td>
+            <td>{{item.tasktitle}}</td>
+            <td>{{item.description}}</td>
+        </tr>
+    </tbody>
+</table>
+
